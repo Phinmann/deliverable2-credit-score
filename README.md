@@ -26,6 +26,9 @@
 | Monthly_Balance | Numeric | Customer's average monthly account balance in dollars. |
 | Credit_Score | Categorical | Target variable: credit score category (Poor, Standard, Good). |
 | Credit_History_Age_Months | Numeric | Total length of the customer's credit history, converted from text to total months. |
+| Credit_Mix_Encoded | Numeric (new, Deliverable 2) | Ordinal encoding of Credit_Mix used for modeling: Bad = 0, Standard = 1, Good = 2. |
+| Pays_Min_Only | Numeric (new, Deliverable 2) | Binary encoding of Payment_of_Min_Amount used for modeling: Yes = 1, No = 0. |
+| Is_Poor | Numeric (new, Deliverable 2) | Binary target variable used for the logistic regression model: 1 if Credit_Score is Poor, 0 otherwise. |
 
 # Descriptive Statistics
 
@@ -48,3 +51,6 @@
 | Amount_invested_monthly | 618.91 | 137.41 | 2,002.87 | 0.00 | 10,000.00 |
 | Monthly_Balance | 406.67 | 340.26 | 215.49 | 0.01 | 1,602.04 |
 | Credit_History_Age_Months | 222.40 | 213.00 | 95.37 | 1.00 | 404.00 |
+| Credit_Mix_Encoded (new) | 1.08 | 1.00 | 0.66 | 0.00 | 2.00 |
+| Pays_Min_Only (new) | 0.50 | 1.00 | 0.50 | 0.00 | 1.00 |
+| Is_Poor (new) | 0.28 | 0.00 | 0.45 | 0.00 | 1.00 |
